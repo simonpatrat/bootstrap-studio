@@ -1,0 +1,46 @@
+.contact-infos-bloc-icon{
+  font-size:36px;
+  margin-top:20px;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.contact-info-bloc-part p{
+  margin:0;
+  font-size:14px;
+}
+
+.contact-info-bloc-part h3{
+  margin-top:0;
+}
+
+.contact-info-bloc-part{
+  padding:10px;
+  min-height:180px;
+}
+
+.contact-info-bloc-part:nth-child(1){
+  background:#eee;
+}
+
+.contact-info-bloc-part:nth-child(2){
+  background:#ddd;
+}
+
+.contact-info-bloc-part:nth-child(3){
+  background:#999;
+}
+
+.contact-info-bloc-part:nth-child(4){
+  background:#d7d7d7;
+}
+
+.contact-infos-bloc a{
+  color:#212121;
+}
+
+.contact-info-bloc-part:hover{
+  background:#46C2EA;
+  transition:all 200ms ease;
+}
+
