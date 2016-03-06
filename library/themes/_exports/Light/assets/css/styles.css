@@ -42,13 +42,15 @@ body{
 
 nav.navbar.navbar-default{
   border-top:none;
-  border-bottom:none;
+  border-bottom:1px solid #f7f7f7;
   box-shadow:none;
   margin-bottom:0;
   box-sizing:border-box;
   background:#fff;
   height:62px;
   min-height:60px;
+  border-left:0;
+  border-right:0;
 }
 
 .no-padding{
@@ -64,12 +66,15 @@ nav.navbar.navbar-default{
 
 .home-image-jumbo{
   border-color:transparent;
-  margin:30px auto 40px auto;
+  margin:0 auto 40px auto;
+  padding-left:0;
+  padding-right:0;
 }
 
 .home-image-jumbo{
-  background:url(../../assets/img/coffeshop.jpg) no-repeat center fixed;
+  background:url(../../assets/img/bg01.jpg) no-repeat bottom center;
   color:#fff;
+  background-size:cover;
 }
 
 .navbar-nav{
@@ -92,7 +97,7 @@ nav.navbar.navbar-default{
 }
 
 .home-image-jumbo{
-  min-height:380px;
+  min-height:480px;
 }
 
 .circle{
@@ -119,7 +124,7 @@ nav.navbar.navbar-default{
 .info-bar{
   border-bottom:1px solid #eee;
   height:40px;
-  background:#000;
+  background:#151313;
   color:#fff;
 }
 
@@ -249,7 +254,7 @@ a.navbar-brand.navbar-link{
   border-top:1px solid #eee;
   padding-top:20px;
   margin-top:0;
-  background:#000;
+  background:#151313;
   color:#fff;
 }
 
@@ -392,8 +397,8 @@ a:hover, a:focus{
 }
 
 p{
-  font-family:'Lora', serif;
-  font-weight:500;
+  font-family:'Open sans', serif;
+  font-weight:400;
 }
 
 .pos-relative{
@@ -459,7 +464,7 @@ p{
 .page-header{
   border:none;
   margin:0 auto;
-  padding:60px 0;
+  padding:120px 0;
 }
 
 .breadcrumb{
@@ -685,15 +690,20 @@ textarea{
 }
 
 .page-header-section{
-  margin:30px auto;
-  border-top:1px solid #eee;
+  margin:0 auto 30px auto;
+  border-top:0px;
   border-bottom:1px solid #eee;
   padding:0;
+  background:#eee;
+  background-size:cover;
 }
 
 .page-header h1{
   padding:0;
   margin:0 auto;
+  display:inline-block;
+  padding:10px;
+  background:rgba(255,255,255,0.7);
 }
 
 #mainNav.affix .nav{
@@ -715,5 +725,101 @@ textarea{
 
 .img-rounded{
   border-radius:5px;
+}
+
+.container-fluid .jumbotron.home-image-jumbo{
+  padding-left:0;
+  padding-right:0;
+}
+
+.whole-site.boxed{
+  max-width:1200px;
+  margin:auto;
+  box-shadow:0 0 15px 0 rgba(0,0,0,0.2);
+}
+
+.bsw-gallery-caption.pos-absolute{
+  left:10px;
+  right:10px;
+  top:10px;
+  bottom:10px;
+  margin:0 auto;
+  background:rgba(255,255,255,0.5);
+  opacity:0;
+  transition:all 400ms ease;
+}
+
+.bsw-caption-project-name{
+  text-transform:uppercase;
+  position:absolute;
+  left:0;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.bsw-caption-project-links a{
+  font-size:18px;
+}
+
+.bsw-image-gallery .thumbnail:hover .bsw-gallery-caption{
+  opacity:1;
+}
+
+.breadcrumb-container{
+  position:absolute;
+  bottom:10px;
+  left:0;
+  right:0;
+}
+
+.btn-xs .fa{
+  line-height:30px;
+}
+
+.btn-icon{
+  padding:0;
+  width:30px;
+  height:30px;
+}
+
+.btn-transparent{
+  background:transparent;
+}
+
+.info-bar-btn-list{
+  vertical-align:middle;
+  display:inline-block;
+  line-height:38px;
+}
+
+div.info-bar-block:first-child{
+  line-height:38px;
+}
+
+._bsw-team-preview-description{
+  margin:auto;
+}
+
+.btn-icon-medium{
+  text-align:center;
+  font-size:20px;
+}
+
+.gototop{
+  bottom:60px;
+  right:10px;
+  display:none;
+}
+
+.pos-fixed{
+  position:fixed;
+}
+
+.bsw-sidebar-gallery li{
+  width:calc(50% - 12px);
+  padding:0;
+  margin:5px;
+  position:relative;
 }
 
