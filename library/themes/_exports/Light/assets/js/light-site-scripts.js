@@ -13,13 +13,14 @@ var siteScripts = function() {
     $(window).on('scroll', function() {
         var winTop = $(this).scrollTop();
         if(winTop> ($(window).height() / 3) * 2) {
-            gototopfixed.fadeIn(300, function() {
-                $(this).addClass('in');
+            gototopfixed.addClass('in')
+                        .addClass('pulse animated')
+                        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                        $(this).removeClass('pulse animated'); 
             });
         }else {
-            gototopfixed.fadeOut(300, function() {
-                $(this).removeClass('in');
-            });            
+            gototopfixed.removeClass('in');
+         
         }
     });
 
