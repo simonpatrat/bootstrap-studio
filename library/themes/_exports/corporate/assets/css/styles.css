@@ -182,9 +182,10 @@ ul.dropdown-menu{
 }
 
 .navbar.navbar-big-transparent.sticky-nav .dropdown-menu > li > a, .dropdown-menu > li > a{
-  line-height:40px;
+  line-height:50px;
   padding:0 10px;
   color:#ccc;
+  text-transform:uppercase;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
@@ -353,7 +354,7 @@ select.select-big option{
   border-radius:0;
 }
 
-.list-media{
+_bsw-sidebar-widget{
 }
 
 .heading-background.heading-background-small{
@@ -565,5 +566,138 @@ textarea{
   .padd-top-xs-50{
     padding-top:50px;
   }
+}
+
+.padding-top-medium{
+  padding-top:60px;
+}
+
+.padding-bottom-medium{
+  padding-bottom:60px;
+}
+
+.text-bold{
+  font-weight:bold;
+}
+
+.article-body p{
+  line-height:1.8;
+}
+
+.list-group-item{
+  border-left:0;
+  border-right:0;
+}
+
+.list-practice-areas .list-group-item{
+  padding:15px 0 15px 0;
+}
+
+.area-title{
+  padding-left:10px;
+}
+
+.media-left a{
+  display:block;
+}
+
+.margin-top-medium{
+  margin-top:60px;
+}
+
+[data-ajax-content] .loader{
+  font-size:24px;
+}
+
+[data-ajax-content]{
+  background:#f7f7f7;
+  min-height:200px;
+}
+
+[data-ajax-content].content-loaded{
+  background:transparent;
+  min-height:auto;
+}
+
+._bsw-sidebar-widget{
+  margin-bottom:20px;
+}
+
+._bsw-ajax-content{
+  opacity:0;
+  transform:translateY(40px);
+  transition:opacity 300ms 200ms ease, transform 300ms ease;
+}
+
+._bsw-ajax-content.visible{
+  opacity:1;
+  transform:none;
+}
+
+.sidebar-team-member-picture ._bsw-thumbnail-meta:after{
+  content:"";
+  display:block;
+  width:50%;
+  margin:auto;
+  height:2px;
+  border-radius:1px;
+  background:#343434;
+}
+
+.sidebar-team-member-picture ._bsw-thumbnail-meta{
+  margin-bottom:20px;
+}
+
+.margin-top-small{
+  margin-top:20px;
+}
+
+.padding-top-small{
+  padding-top:20px;
+}
+
+.margin-bottom-small{
+  margin-bottom:20px;
+}
+
+.margin-bottom-xsmall{
+  margin-bottom:10px;
+}
+
+.padding-small{
+  padding:10px;
+}
+
+.margin-bottom-grid{
+  margin-bottom:30px;
+}
+
+.border-top-small{
+  border-top:1px solid #eee;
+}
+
+body.boxed .whole-site{
+  max-width:1480px;
+  margin:auto;
+  position:relative;
+  box-shadow:0 0 10px 0 rgba(0,0,0,0.4);
+}
+
+.margin-auto{
+  margin:auto;
+}
+
+body.boxed #main-navigation{
+  max-width:1480px;
+}
+
+.whole-site.bswjs{
+  opacity:0;
+  transition:all 5000ms ease 1000ms;
+}
+
+.whole-site.bswjs.transitioned.fade{
+  opacity:1;
+  transition:all 500ms ease 100ms;
 }
 
