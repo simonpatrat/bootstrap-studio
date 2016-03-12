@@ -959,3 +959,11 @@ textarea.form-control{
   margin-top:15px;
 }
 
+.page-header-section.page-header-thin{
+  background:#fff;
+}
+
+.page-header-section.page-header-thin .page-header{
+  padding:60px 0;
+}
+

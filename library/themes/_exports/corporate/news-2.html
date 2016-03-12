@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/Social-icons-basic-list.css">
     <link rel="stylesheet" href="assets/css/flickity.css">
     <link rel="stylesheet" href="assets/css/carousel-testimonials.css">
+    <link rel="stylesheet" href="assets/css/bsw-mega-menu-dropdown.css">
 </head>
 
 <body>
@@ -26,8 +27,8 @@
                         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li class="active" role="presentation"><a href="#" data-change="boxed"><i class="fa fa-arrows-alt"></i></a></li>
+                        <ul class="nav navbar-nav hidden-xs hidden-sm navbar-left">
+                            <li class="active" role="presentation"><a href="#" data-change="boxed" data-toggle="tooltip" data-placement="bottom" title="Toggle boxed version"><i class="fa fa-arrows-alt"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active" role="presentation"><a href="practice-areas.html">Practice areas</a></li>
@@ -40,6 +41,7 @@
                             </li>
                             <li role="presentation"><a href="news.html">News </a></li>
                             <li role="presentation"><a href="about.html">About </a></li>
+                            <li role="presentation"><a href="contact.html">Contact </a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +50,7 @@
         <div class="jumbotron heading-jumbotron heading-background heading-background-small">
             <div class="heading-jumbotron-inner container clearfix text-left">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h1>News </h1>
+                    <h1>News - 2</h1>
                     <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -70,7 +72,7 @@
                             <h2>Latest News</h2>
                             <p>Categorie : Category Name</p>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 text-right">
                             <h4>Categories </h4>
                             <select class="select-big">
                                 <optgroup label="This is a group">
@@ -353,6 +355,8 @@
                 </div>
             </section>
         </footer>
+        <div class="loading-site"></div>
+        <button class="btn btn-default btn-go-to-top pos-fixed" type="button" data-change="goToTop"> <i class="fa fa-angle-up bsw-icon"></i></button>
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -361,6 +365,10 @@
     <script src="assets/js/thumbnails-carousel.js"></script>
     <script src="assets/js/site-scripts.js"></script>
     <script src="assets/js/jquery.inview.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+    <script src="assets/js/site-scripts-google-map-init.js"></script>
 </body>
 
 </html>

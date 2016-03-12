@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/Social-icons-basic-list.css">
     <link rel="stylesheet" href="assets/css/flickity.css">
     <link rel="stylesheet" href="assets/css/carousel-testimonials.css">
+    <link rel="stylesheet" href="assets/css/bsw-mega-menu-dropdown.css">
 </head>
 
 <body>
@@ -26,8 +27,8 @@
                         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li class="active" role="presentation"><a href="#" data-change="boxed"><i class="fa fa-arrows-alt"></i></a></li>
+                        <ul class="nav navbar-nav hidden-xs hidden-sm navbar-left">
+                            <li class="active" role="presentation"><a href="#" data-change="boxed" data-toggle="tooltip" data-placement="bottom" title="Toggle boxed version"><i class="fa fa-arrows-alt"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active" role="presentation"><a href="practice-areas.html">Practice areas</a></li>
@@ -40,6 +41,7 @@
                             </li>
                             <li role="presentation"><a href="news.html">News </a></li>
                             <li role="presentation"><a href="about.html">About </a></li>
+                            <li role="presentation"><a href="contact.html">Contact </a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +50,7 @@
         <div class="jumbotron heading-jumbotron heading-background heading-background-mid padd-top-100">
             <div class="heading-jumbotron-inner container clearfix text-left">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h1>Page Title</h1>
+                    <h1>Area Title</h1>
                     <p>Page description or slogan</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -69,15 +71,29 @@
                         <div class="_bsw-sidebar-widget list-practice-areas">
                             <h4>Practice Areas</h4>
                             <ul class="list-group">
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Practice Area 1</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Practice Area 2</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Practice Area 3</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Practice Area 4</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Practice Area 5</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Practice Area 6</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="practice-area-1.html">Practice Area 1</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="practice-area-1.html">Practice Area 2</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="practice-area-1.html">Practice Area 3</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="practice-area-1.html">Practice Area 4</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="practice-area-1.html">Practice Area 5</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="practice-area-1.html">Practice Area 6</a></span></li>
                             </ul>
                         </div>
-                        <div class="_bsw-sidebar-widget"></div>
+                        <section class="_bswidget promo-section bloc-border light-bg text-center">
+                            <div class="promo-section-inner padding-xsmall-top-bottom">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="text-bold">Promo Block<small> light-bg</small></h4>
+                                            <p>Suspendisse laoreet finibus magna vel consectetur. Morbi nunc mi, cursus at sodales a, luctus in turpis. </p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="promo-section-btn-container text-center padding-xsmall-top-bottom"><a class="btn btn-primary btn-lg" role="button" href="#">Button</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <div class="_bsw-sidebar-widget list-media padding-xsmall-top-bottom">
                             <h4>Related Articles</h4>
                             <div class="media">
@@ -118,17 +134,17 @@
                                 <p class="text-bold article-intro"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique venenatis mattis. Quisque dictum sodales dignissim. Quisque magna lectus, varius id auctor ut, sollicitudin vel mauris. Nunc lacinia aliquet massa,
                                     vel eleifend lacus pharetra ut. Aliquam vitae mauris neque. Nullam id posuere dui, nec blandit erat. In hac habitasse platea dictumst. Fusce egestas sodales faucibus. Sed vehicula tempus tellus.&nbsp; </p>
                                 <p> Sed egestas ligula vitae lacus pellentesque pulvinar. Curabitur a orci risus. Maecenas varius eleifend nisi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non leo et tellus tempor varius nec ut
-                                    metus. Nullam vulputate, dolor commodo tincidunt efficitur, diam enim fermentum ex, vitae sollicitudin elit justo id ligula. Sed a dignissim sem. Sed non dui sapien. Fusce dapibus porttitor turpis sit amet rhoncus.
-                                    Cras sed molestie diam. Suspendisse feugiat erat dui.Quisque et lectus lacus. Vivamus interdum turpis eget enim hendrerit accumsan. Nam id porttitor tortor, at ultrices felis.&nbsp; </p>
+                                    metus. Nullam vulputate, <a href="#">dolor commodo </a> tincidunt efficitur, diam enim fermentum ex, vitae sollicitudin elit justo id ligula. Sed a dignissim sem. Sed non dui sapien. Fusce dapibus porttitor turpis sit
+                                    amet rhoncus. Cras sed molestie diam. Suspendisse feugiat erat dui.Quisque et lectus lacus. Vivamus interdum turpis eget enim hendrerit accumsan. Nam id porttitor tortor, at ultrices felis.&nbsp; </p>
                                 <h4 class="text-bold">Heading</h4>
                                 <p>Phasellus quis pellentesque ex, et dapibus mi. Suspendisse condimentum, nulla vitae cursus pretium, orci dolor dignissim est, vitae varius ipsum nisl ut augue. Cras eu ornare sem, eu porta magna. Ut felis risus, egestas
-                                    ut sagittis id, varius vitae ex. Integer sit amet dolor enim. Nullam tincidunt, nulla non feugiat tempor, lorem sem consequat massa, tempus condimentum libero mauris vitae dolor. Donec vel varius nisl. Cras tempus pharetra
-                                    diam id venenatis. Vivamus luctus dui sed molestie ultrices. Aenean sagittis eget mi vel malesuada. Nam vitae cursus augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                    </p>
+                                    ut sagittis id, <a href="#">varius vitae ex. </a> Integer sit amet dolor enim. Nullam tincidunt, nulla non feugiat tempor, lorem sem consequat massa, tempus condimentum libero mauris vitae dolor. Donec vel varius nisl.
+                                    Cras tempus pharetra diam id venenatis. Vivamus luctus dui sed molestie ultrices. Aenean sagittis eget mi vel malesuada. Nam vitae cursus augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                                    ac turpis egestas. </p>
                                 <h4 class="text-bold">Heading</h4>
                                 <p>Nam sed venenatis neque. In eget molestie metus, sed blandit enim. Duis finibus neque libero, tristique malesuada libero congue et. Cras sit amet mauris sit amet mauris rutrum rhoncus. Curabitur eget sem a dolor fermentum
                                     fermentum. Nullam luctus at erat non gravida. Curabitur euismod justo ac nibh luctus sollicitudin. Maecenas et mollis velit.&nbsp; </p>
-                                <p class="text-left"><a class="btn btn-primary" role="button" href="#">Contact us <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+                                <p class="text-left"><a class="btn btn-primary" role="button" href="contact.html">Contact us <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
                             </section>
                         </article>
                         <div class="row">
@@ -148,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="_bsw-thumbnail-meta text-center">
-                                        <h4><a href="#">Team Member Name</a></h4>
+                                        <h4><a href="team-member.html">Team Member Name</a></h4>
                                         <h6><em>Team member function</em></h6></div>
                                 </div>
                             </div>
@@ -164,7 +180,7 @@
                                         </div>
                                     </div>
                                     <div class="_bsw-thumbnail-meta text-center">
-                                        <h4><a href="#">Team Member Name</a></h4>
+                                        <h4><a href="team-member.html">Team Member Name</a></h4>
                                         <h6><em>Team member function</em></h6></div>
                                 </div>
                             </div>
@@ -180,7 +196,7 @@
                                         </div>
                                     </div>
                                     <div class="_bsw-thumbnail-meta text-center">
-                                        <h4><a href="#">Team Member Name</a></h4>
+                                        <h4><a href="team-member.html">Team Member Name</a></h4>
                                         <h6><em>Team member function</em></h6></div>
                                 </div>
                             </div>
@@ -196,7 +212,7 @@
                                         </div>
                                     </div>
                                     <div class="_bsw-thumbnail-meta text-center">
-                                        <h4><a href="#">Team Member Name</a></h4>
+                                        <h4><a href="team-member.html">Team Member Name</a></h4>
                                         <h6><em>Team member function</em></h6></div>
                                 </div>
                             </div>
@@ -212,7 +228,7 @@
                                         </div>
                                     </div>
                                     <div class="_bsw-thumbnail-meta text-center">
-                                        <h4><a href="#">Team Member Name</a></h4>
+                                        <h4><a href="team-member.html">Team Member Name</a></h4>
                                         <h6><em>Team member function</em></h6></div>
                                 </div>
                             </div>
@@ -228,13 +244,13 @@
                                         </div>
                                     </div>
                                     <div class="_bsw-thumbnail-meta text-center">
-                                        <h4><a href="#">Team Member Name</a></h4>
+                                        <h4><a href="team-member.html">Team Member Name</a></h4>
                                         <h6><em>Team member function</em></h6></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row text-left margin-top-medium">
-                            <div class="col-md-12"><a class="btn btn-primary btn-lg" role="button" href="#">Meet the whole team</a></div>
+                            <div class="col-md-12"><a class="btn btn-primary btn-lg" role="button" href="team.html">Meet the whole team</a></div>
                         </div>
                     </div>
                 </div>
@@ -376,6 +392,8 @@
                 </div>
             </section>
         </footer>
+        <div class="loading-site"></div>
+        <button class="btn btn-default btn-go-to-top pos-fixed" type="button" data-change="goToTop"> <i class="fa fa-angle-up bsw-icon"></i></button>
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -384,6 +402,10 @@
     <script src="assets/js/thumbnails-carousel.js"></script>
     <script src="assets/js/site-scripts.js"></script>
     <script src="assets/js/jquery.inview.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+    <script src="assets/js/site-scripts-google-map-init.js"></script>
 </body>
 
 </html>

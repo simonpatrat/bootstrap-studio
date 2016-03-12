@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/Social-icons-basic-list.css">
     <link rel="stylesheet" href="assets/css/flickity.css">
     <link rel="stylesheet" href="assets/css/carousel-testimonials.css">
+    <link rel="stylesheet" href="assets/css/bsw-mega-menu-dropdown.css">
 </head>
 
 <body>
@@ -26,8 +27,8 @@
                         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li class="active" role="presentation"><a href="#" data-change="boxed"><i class="fa fa-arrows-alt"></i></a></li>
+                        <ul class="nav navbar-nav hidden-xs hidden-sm navbar-left">
+                            <li class="active" role="presentation"><a href="#" data-change="boxed" data-toggle="tooltip" data-placement="bottom" title="Toggle boxed version"><i class="fa fa-arrows-alt"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active" role="presentation"><a href="practice-areas.html">Practice areas</a></li>
@@ -40,6 +41,7 @@
                             </li>
                             <li role="presentation"><a href="news.html">News </a></li>
                             <li role="presentation"><a href="about.html">About </a></li>
+                            <li role="presentation"><a href="contact.html">Contact </a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +50,7 @@
         <div class="jumbotron heading-jumbotron heading-background heading-background-mid padd-top-100">
             <div class="heading-jumbotron-inner container clearfix text-left">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h1>Page Title</h1>
+                    <h1>Team member name</h1>
                     <p>Page description or slogan</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -68,9 +70,9 @@
                     <div class="col-md-3">
                         <div class="_bsw-sidebar-widget sidebar-team-member-picture text-center"><img class="img-responsive margin-auto" src="assets/img/263x310.png">
                             <div class="_bsw-thumbnail-meta text-center">
-                                <h4><a href="#">Team Member Name</a></h4>
+                                <h4 class="text-bold">Team Member Name </h4>
                                 <h6><em>Team member function</em></h6></div>
-                            <div class="text-center"><a class="btn btn-primary" role="button" href="#">Contact team member</a></div>
+                            <div class="text-center"><a class="btn btn-primary" role="button" href="contact.html">Contact team member</a></div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -98,7 +100,7 @@
                                 <div class="thumbnail margin-bottom-grid padding-small text-center">
                                     <div class="_bsw-relative"><i class="fa fa-money _bsw-icon-medium _bsw-icon-rounded dark-bg"></i></div>
                                     <div class="caption">
-                                        <h4 class="text-bold"> <a href="#">Practice area 1</a></h4>
+                                        <h4 class="text-bold"> <a href="practice-area-1.html">Practice area 1</a></h4>
                                         <p class="text-muted"> <small>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</small></p>
                                     </div>
                                 </div>
@@ -107,7 +109,7 @@
                                 <div class="thumbnail margin-bottom-grid padding-small text-center">
                                     <div class="_bsw-relative"><i class="fa fa-money _bsw-icon-medium _bsw-icon-rounded dark-bg"></i></div>
                                     <div class="caption">
-                                        <h4 class="text-bold"> <a href="#">Practice area 1</a></h4>
+                                        <h4 class="text-bold"> <a href="practice-area-1.html">Practice area 1</a></h4>
                                         <p class="text-muted"> <small>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</small></p>
                                     </div>
                                 </div>
@@ -116,7 +118,7 @@
                                 <div class="thumbnail margin-bottom-grid padding-small text-center">
                                     <div class="_bsw-relative"><i class="fa fa-money _bsw-icon-medium _bsw-icon-rounded dark-bg"></i></div>
                                     <div class="caption">
-                                        <h4 class="text-bold"> <a href="#">Practice area 1</a></h4>
+                                        <h4 class="text-bold"> <a href="practice-area-1.html">Practice area 1</a></h4>
                                         <p class="text-muted"> <small>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</small></p>
                                     </div>
                                 </div>
@@ -125,7 +127,7 @@
                                 <div class="thumbnail margin-bottom-grid padding-small text-center">
                                     <div class="_bsw-relative"><i class="fa fa-money _bsw-icon-medium _bsw-icon-rounded dark-bg"></i></div>
                                     <div class="caption">
-                                        <h4 class="text-bold"> <a href="#">Practice area 1</a></h4>
+                                        <h4 class="text-bold"> <a href="practice-area-1.html">Practice area 1</a></h4>
                                         <p class="text-muted"> <small>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</small></p>
                                     </div>
                                 </div>
@@ -136,14 +138,14 @@
                         <div class="_bsw-sidebar-widget list-practice-areas">
                             <h4>Team members</h4>
                             <ul class="list-group">
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
-                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="#">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
+                                <li class="list-group-item"><i class="fa fa-long-arrow-right"></i><span class="area-title"> <a href="team-member.html">Team Member Name</a></span></li>
                             </ul>
                         </div>
                         <section class="_bswidget promo-section bloc-border dark-bg text-center">
@@ -151,7 +153,7 @@
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4 class="text-bold">Promo Block</h4>
+                                            <h4 class="text-bold">Promo Block<small> Dark bg</small></h4>
                                             <p>Suspendisse laoreet finibus magna vel consectetur. Morbi nunc mi, cursus at sodales a, luctus in turpis. </p>
                                         </div>
                                         <div class="col-md-12">
@@ -170,20 +172,21 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <h1 class="text-center">Latest News</h1>
-                        <h4 class="text-center">Lorem Ipsum Subtitle</h4><a class="btn btn-primary btn-block link-all-btn" role="button" href="#">Button</a>
+                        <h4 class="text-center">Lorem Ipsum Subtitle</h4><a class="btn btn-primary btn-block link-all-btn" role="button" href="news.html">News page</a>
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
                                 <h4>Heading</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
-                            <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="news-article.html">Button</a></div>
+                            <div
+                            class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
                                 <h4>Heading</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
-                            <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
-                                <h4>Heading</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
-                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                            <h4>Heading</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <footer class="site-footer footer-full-featured dark-bg">
@@ -322,6 +325,8 @@
                 </div>
             </section>
         </footer>
+        <div class="loading-site"></div>
+        <button class="btn btn-default btn-go-to-top pos-fixed" type="button" data-change="goToTop"> <i class="fa fa-angle-up bsw-icon"></i></button>
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -330,6 +335,10 @@
     <script src="assets/js/thumbnails-carousel.js"></script>
     <script src="assets/js/site-scripts.js"></script>
     <script src="assets/js/jquery.inview.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
+    <script src="assets/js/site-scripts-google-map-init.js"></script>
 </body>
 
 </html>
