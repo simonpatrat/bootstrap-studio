@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section class="_app-container">
+        <section class="_page-container">
+            <header class="_main-header text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>To do list</h1>
+                            <div class="text-center clearfix _todo-main-controls">
+                                <div class="btn-group" role="group">
+                                    <button class="btn btn-default" type="button"> <i class="fa fa-undo"></i></button>
+                                    <button class="btn btn-default" type="button"> <i class="fa fa-undo fa-flip-horizontal"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="_main-content">
+                <section class="_todo-list-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <section class="_add-task-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="Add a task..." id="task-adder">
+                                        </div>
+                                    </form>
+                                </section>
+                                <section class="_todo-list">
+                                    <ul class="list-group _to-do-list-group" id="task-list">
+                                        <li class="list-group-item"><span>Making a todo list</span>
+                                            <div class="btn-group pull-right" role="group">
+                                                <button class="btn btn-default _todo-remove" type="button"> <i class="glyphicon glyphicon-trash"></i></button>
+                                                <button class="btn btn-default _todo-important" type="button"> <i class="glyphicon glyphicon-star"></i></button>
+                                                <button class="btn btn-default _todo-validate" type="button"> <i class="glyphicon glyphicon-ok"></i></button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/todolist.js"></script>
+</body>
+
+</html>

@@ -74,16 +74,16 @@
                     <ul class="nav navbar-nav">
                         <li class="active" role="presentation"><a href="index.html">home </a></li>
                         <li role="presentation"><a href="about.html">about </a></li>
-                        <li role="presentation"><a href="portfolio.html">portfolio</a></li>
-                        <li role="presentation"><a href="blog.html">blog </a></li>
-                        <li role="presentation"><a href="contact.html">Contact </a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown <span class="caret"></span></a>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Portfolio <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">First Item</a></li>
-                                <li><a href="#">Second Item</a></li>
-                                <li><a href="#">Third Item</a></li>
+                                <li><a href="portfolio.html">Portfolio 3 columns</a></li>
+                                <li><a href="portfolio-2-columns.html">Portfolio 2 columns</a></li>
+                                <li><a href="portfolio-4-columns.html">Portfolio 4 columns</a></li>
+                                <li><a href="portfolio-4-columns-no-padding.html">Portfolio 4 columns no-padding</a></li>
                             </ul>
                         </li>
+                        <li role="presentation"><a href="blog.html">blog </a></li>
+                        <li role="presentation"><a href="contact.html">Contact </a></li>
                     </ul>
                 </div>
             </div>
@@ -109,51 +109,53 @@
             </div>
         </section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 padding-top-small padding-bottom-small margin-bottom-medium">
-                    <div class="_bsw-form">
-                        <form class="bootstrap-form-with-validation">
-                            <h2 class="text-center">Get in touch </h2>
-                            <div class="form-group">
-                                <label class="control-label">Lorem </label>
-                                <p class="form-static-control text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet arcu et lacus scelerisque lobortis.</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="text-input">Name </label>
-                                        <input class="form-control" type="text" name="text-input" id="text-input">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="email-input">Email Input</label>
-                                        <input class="form-control" type="email" name="email-input" id="email-input">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="control-label" for="textarea-input">Textarea </label>
-                                        <textarea class="form-control" name="textarea-input" id="textarea-input"></textarea>
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <button class="btn btn-danger btn-lg" type="submit">Submit </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+            <div class="row padding-top-large padding-bottom-medium">
+                <div class="col-md-4">
+                    <div class="address-block form-address-block">
+                        <h1>Contact us</h1>
+                        <div class="address-bloc-content">
+                            <ul class="list-group list-address">
+                                <li class="list-group-item clearfix"><i class="fa fa-map-marker pull-left"></i><span class="pull-left">1 rue du Lorem Ipsum, 17470, Lorem City, France</span></li>
+                                <li class="list-group-item clearfix"><i class="fa fa-paper-plane pull-left"></i><span class="pull-left"> <a href="#">contact@domaine.com </a></span></li>
+                                <li class="list-group-item clearfix"><i class="fa fa-phone pull-left"></i><span class="pull-left">+335 1234 4578</span></li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" placeholder="Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group margin-top-small">
+                                            <button class="btn btn-primary btn-lg" type="submit">Submit </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
         <section class="map-section">
-            <div class="map-container">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178840.9284881119!2d-73.66003793457723!3d45.54248947579667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQywgQ2FuYWRh!5e0!3m2!1sfr!2sfr!4v1457110499388"></iframe>
-                </div>
-            </div>
+            <div id="bswgmap" class="map-container"></div>
         </section>
         <footer class="site-footer">
             <div class="container">
@@ -228,6 +230,8 @@
     <script src="assets/js/Images-gallery-with-fancybox-and-masonry.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/flickity.pkgd.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
 </body>
 
 </html>
