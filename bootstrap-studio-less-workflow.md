@@ -28,7 +28,7 @@ If you choose to export, Bootstrap Studio will show a new modal window in which 
 
 ##3 - LESS
 
-Here is a exemple of file import structure when you're working with bootsrap and LESS
+Here is a example of file import structure when you're working with bootsrap and LESS
 
 ###LESS files import structure :
 
@@ -47,9 +47,9 @@ LESS FILES IMPORT STRUCTURE :
 
 ```
 
-#### LESS exemple of an *import.less* file :
+#### LESS example of an *import.less* file :
 
-Here is an exemple of **import.less** file :
+Here is an example of **import.less** file :
 
 ```less
     @import "your-path-to-bootstrap-folder/bootstrap.less"; // from your bootstrap folder
