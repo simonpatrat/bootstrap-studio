@@ -70,7 +70,7 @@ And the components.less file goes like this :
 
 Where each component will be the LESS version of the exported *component_my_component.css* file from bootsrap studio.
 
-**So, then your could reorganize your code in each component to switch properties values into variables you have defined in your *variables.less* file**
+**So, then you could reorganize your code in each component to switch properties values into variables you have defined in your *variables.less* file**
 
 ##4 - Begin to customize
 
