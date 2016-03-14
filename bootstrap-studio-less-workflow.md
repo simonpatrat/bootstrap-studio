@@ -59,7 +59,7 @@ Here is an example of **import.less** file :
     @import "your-path/style.less"; // This file define additional and specific styles for the site
 ```
 
-And the components.less file goes like this :
+And the **components.less** file goes like this :
 
 ```less
     @import "your-path/components/component_component_name_1.less";
