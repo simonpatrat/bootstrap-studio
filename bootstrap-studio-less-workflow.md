@@ -30,7 +30,7 @@ If you choose to export, Bootstrap Studio will show a new modal window in which 
 
 Here is a exemple of file import structure when you're working with bootsrap and LESS
 
-###LESS FILES IMPORT STRUCTURE :
+###LESS files import structure :
 
 ```
 LESS FILES IMPORT STRUCTURE :
