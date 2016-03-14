@@ -1,5 +1,5 @@
 #Bootstrap studio LESS Workflow
-Going further in creating customizable themes
+Going further in creating customizable themes using LESScss
 
 ##1 - Creating theme with Bootstrap Studio
 
