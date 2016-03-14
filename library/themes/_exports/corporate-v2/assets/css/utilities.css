@@ -1,0 +1,169 @@
+/* ------------------------------------------------------------------- //
+	|																|
+	|				  /**** UTILITIES CLASSES ****/					|
+	|																|
+// ------------------------------------------------------------------- */
+
+// -----------------------------------------------------------------------------Positions
+._bsw-relative{
+  position:relative;
+}
+
+._bsw-absolute{
+  position:absolute;
+}
+
+._bsw-fixed{
+  position:fixed;
+}
+
+._bsw-static{
+  position:static;
+}
+
+
+// ------------------------------------------------------------------- Paddings and Margins
+
+//// ----------------------------------------------------------------------------- [ Paddings ]
+
+//////// ----------------------------------------------------------------------------- Medium
+.padding-top-medium{
+  padding-top:60px;
+}
+
+.padding-bottom-medium, .padding-medium-bottom{
+  padding-bottom:60px;
+}
+
+.padding-medium-top-bottom{
+  padding:60px 0 60px 0;
+}
+
+//////// ----------------------------------------------------------------------------- Small
+
+._bsw-padding-small{
+  padding:30px;
+}
+
+.padding-small-top-bottom{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.padding-top-small{
+  padding-top:20px;
+}
+
+.padding-small{
+  padding:10px;
+}
+
+//////// ----------------------------------------------------------------------------- Extra small
+
+.padding-xsmall-top-bottom{
+  padding:20px 0 20px 0;
+}
+
+
+//////// ----------------------------------------------------------------------------- Extra  extra small
+
+.padding-xxsmall-top-bottom{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+//////// ----------------------------------------------------------------------------- Pixel values
+
+.padd-top-100{
+  padding-top:100px;
+}
+
+//////// ----------------------------------------------------------------------------- No padding
+._bsw-no-padding{
+  padding:0;
+}
+
+
+//////// ----------------------------------------------------------------------------- Depending on device width
+
+
+@media (max-width:767px) {
+  .padd-top-xs-50{
+    padding-top:50px;
+  }
+}
+
+//// ----------------------------------------------------------------------------- [ Margins ]
+
+//////// ----------------------------------------------------------------------------- No Margin
+._bsw-no-margin{
+  margin:0;
+}
+
+//////// ----------------------------------------------------------------------------- Auto margin
+
+._bsw-margin-auto{
+  margin: auto;
+}
+
+.margin-auto{
+  margin:auto;
+}
+
+//////// ----------------------------------------------------------------------------- Extra large
+
+//////// ----------------------------------------------------------------------------- Large
+
+//////// ----------------------------------------------------------------------------- Medium
+
+.margin-top-medium{
+  margin-top:60px;
+}
+
+
+//////// ----------------------------------------------------------------------------- Medium small
+.margin-bottom-smedium{
+  margin-bottom:30px;
+}
+
+//////// ----------------------------------------------------------------------------- Small
+
+.margin-top-bottom-small{
+  margin:20px auto;
+}
+
+.margin-top-small{
+  margin-top:20px;
+}
+
+.margin-bottom-small{
+  margin-bottom:20px;
+}
+
+//////// ----------------------------------------------------------------------------- Extra small
+
+.margin-bottom-xsmall{
+  margin-bottom:10px;
+}
+
+
+//////// ----------------------------------------------------------------------------- Extra extra small
+
+
+//////// ----------------------------------------------------------------------------- Based on grid values
+
+.margin-bottom-grid{
+  margin-bottom:30px;
+}
+
+
+// ----------------------------------------------------------------------------- Borders
+.border-top-small{
+  border-top:1px solid #eee;
+}
+
+
+// Icons
+._bsw-icon-rounded{
+  border-radius:5px;
+}
