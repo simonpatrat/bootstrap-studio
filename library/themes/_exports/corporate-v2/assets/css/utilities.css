@@ -1,4 +1,3 @@
-/* -----------------------------------------------------------------------------Positions */
 ._bsw-relative, .pos-relative{
   position:relative;
 }
@@ -15,26 +14,18 @@
   position:static;
 }
 
-
-/*  ------------------------------------------------------------------- Paddings and Margins */
-
-/* ----------------------------------------------------------------------------- [ Paddings ] */
-
-/* ----------------------------------------------------------------------------- Medium */
 .padding-top-medium{
   padding-top:60px;
 }
 
-.padding-bottom-medium {
+.padding-bottom-medium{
   padding-bottom:60px;
 }
 
 .padding-medium-top-bottom{
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top:60px;
+  padding-bottom:60px;
 }
-
-/* ----------------------------------------------------------------------------- Small */
 
 ._bsw-padding-small, .padding-small{
   padding:30px;
@@ -45,50 +36,43 @@
   padding-bottom:30px;
 }
 
+.padding-top-small{
+  padding-top:30px;
+}
 
-/* ----------------------------------------------------------------------------- Extra small */
+.padding-bottom-small{
+  padding-bottom:30px;
+}
 
 .padding-xsmall-top-bottom{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .padding-top-xsmall{
   padding-top:20px;
 }
 
-/* ----------------------------------------------------------------------------- Extra  extra small */
+.padding-bottom-xsmall{
+  padding-bottom:20px;
+}
 
 .padding-xxsmall{
   padding:10px;
 }
 
-
-/*  ----------------------------------------------------------------------------- Extra  extra  extra small (!) */
-
 .padding-xxxsmall-top-bottom{
   padding-top:5px;
   padding-bottom:5px;
 }
-/*
-//////// ----------------------------------------------------------------------------- Pixel values 
-*/
 
 .padd-top-100{
   padding-top:100px;
 }
 
-/*
-//////// ----------------------------------------------------------------------------- No padding
-*/
-
 ._bsw-no-padding{
   padding:0;
 }
-
-/*
-//////// ----------------------------------------------------------------------------- Depending on device width
-*/
 
 @media (max-width:767px) {
   .padd-top-xs-50{
@@ -96,56 +80,25 @@
   }
 }
 
-/*
-//// ----------------------------------------------------------------------------- [ Margins ]
-*/
-/*
-//////// ----------------------------------------------------------------------------- No Margin
-*/
-
 ._bsw-no-margin{
   margin:0;
 }
 
-/*
-//////// ----------------------------------------------------------------------------- Auto margin
-*/
-
 ._bsw-margin-auto{
-  margin: auto;
+  margin:auto;
 }
 
 .margin-auto{
   margin:auto;
 }
 
-/*
-//////// ----------------------------------------------------------------------------- Extra large
-*/
-
-/*
-//////// ----------------------------------------------------------------------------- Large
-*/
-
-/*
-//////// ----------------------------------------------------------------------------- Medium
-*/
-
 .margin-top-medium{
   margin-top:60px;
 }
 
-/*
-//////// ----------------------------------------------------------------------------- Medium small
-*/
-
 .margin-bottom-smedium{
   margin-bottom:30px;
 }
-
-/*
-//////// ----------------------------------------------------------------------------- Small
-*/
 
 .margin-top-bottom-small{
   margin:20px auto;
@@ -159,45 +112,25 @@
   margin-bottom:20px;
 }
 
-/*
-//////// ----------------------------------------------------------------------------- Extra small
-*/
-
 .margin-bottom-xsmall{
   margin-bottom:10px;
 }
-
-/*
-//////// ----------------------------------------------------------------------------- Extra extra small
-*/
-
-/*
-//////// ----------------------------------------------------------------------------- Based on grid values
-*/
 
 .margin-bottom-grid{
   margin-bottom:30px;
 }
 
-/*
-// ----------------------------------------------------------------------------- Borders
-*/
-
 .border-top-small{
   border-top:1px solid #eee;
 }
 
-/*
-// Icons
-*/
+.border-bottom-small{
+  border-bottom:1px solid #eee;
+}
 
 ._bsw-icon-rounded{
   border-radius:5px;
 }
-
-/*
-// ----------------------------------------------------------------------------- Background styles
-*/
 
 .dark-bg{
   background:#343434;
@@ -207,3 +140,40 @@
 .light-bg{
   background:#f7f7f7;
 }
+
+body:after{
+  visibility:hidden;
+  height:0;
+  font-size:0;
+  position:absolute;
+  z-index:-1;
+}
+
+@media (max-width:767px) {
+  body:after{
+    content:'phone';
+  }
+}
+
+@media (min-width:768px) {
+  body:after{
+    content:'tablet';
+  }
+}
+
+@media (min-width:992px) {
+  body:after{
+    content:'laptop';
+  }
+}
+
+@media (min-width:1200px) {
+  body:after{
+    content:'desktop';
+  }
+}
+
+._bsw-border-top{
+  border-top:1px solid #eee;
+}
+

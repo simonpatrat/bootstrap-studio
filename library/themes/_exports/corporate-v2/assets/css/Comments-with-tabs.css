@@ -1,0 +1,15 @@
+.comment-avatar{
+  max-width:100px;
+}
+
+.comments-with-tabs .tab-content > .tab-pane{
+  padding:40px 10px;
+  border:1px solid #eee;
+  border-top:none;
+}
+
+.heading-background-full-height{
+  height:100vh;
+  min-height:430px;
+}
+

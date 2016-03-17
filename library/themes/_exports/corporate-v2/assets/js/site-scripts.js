@@ -76,15 +76,23 @@ var siteScripts = function() {
     // Loader and page transition on load when images have loaded
     $('.whole-site').imagesLoaded( function() {
         // images have loaded
+        //console.log('Images loaded');
         $('.loading-site').addClass('site-loaded');
     });
     
     // Dropdown fadeToggle on hover
-    $('#main-navigation ul.nav li.dropdown').hover(function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
-    }, function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-    });
+    $('#main-navigation ul.nav > li.dropdown').hover(
+        
+        function() {
+        
+      $(this).find(' > .dropdown-menu').stop(true, true).delay(100).fadeIn(300);
+        
+        }, function() {
+        
+            $(this).find('> .dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+      
+        });
+
 
     // fixed gototop button apparition
     var gototopfixed = $('.btn-go-to-top.pos-fixed');
@@ -162,6 +170,37 @@ var siteScripts = function() {
     // Initialize Google map
     // Required script file : site-scripts-google-map-init.js
     initMap();
+    
+    if (matchMedia) { // If the method is supported by browser
+        //console.log('matchmedia : suported');
+        var mq_xs = window.matchMedia("(max-width: 767px)");
+        var mq_sm = window.matchMedia("(min-width: 768px)");
+        var mq_m = window.matchMedia("(min-width: 992px)");
+        var mq_l = window.matchMedia("(min-width: 1200px)");
+        mq_xs.addListener(WidthChange);
+        mq_sm.addListener(WidthChange);
+        mq_m.addListener(WidthChange);
+        mq_l.addListener(WidthChange);
+        WidthChange(mq_xs);
+        WidthChange(mq_sm);
+        WidthChange(mq_m);
+        WidthChange(mq_l);
+        
+        
+    }
+
+    // media query change
+    function WidthChange(mq) {
+        
+      if (mq.matches) {
+        return true;
+        //console.log(mq);
+      } else {
+        return false;
+        //console.log(mq);
+      }
+      
+    }
 
 
 };

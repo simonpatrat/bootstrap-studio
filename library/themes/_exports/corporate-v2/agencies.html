@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate Theme v2</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Three-columns-Address-bloc.css">
     <link rel="stylesheet" href="assets/css/carousel-vertical.css">
     <link rel="stylesheet" href="assets/css/column-list-3-columns.css">
@@ -16,36 +16,161 @@
     <link rel="stylesheet" href="assets/css/flickity.css">
     <link rel="stylesheet" href="assets/css/carousel-testimonials.css">
     <link rel="stylesheet" href="assets/css/bsw-mega-menu-dropdown.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/Comments-with-tabs.css">
+    <link rel="stylesheet" href="assets/css/dropdown-submenus.css">
 </head>
 
 <body>
     <section class="whole-site">
         <header class="main-header">
-            <nav class="navbar navbar-default navbar-big-transparent" id="main-navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html">Corporate </a>
-                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav hidden-xs hidden-sm navbar-left">
-                            <li class="active" role="presentation"><a href="#" data-change="boxed" data-toggle="tooltip" data-placement="bottom" title="Toggle boxed version"><i class="fa fa-arrows-alt"></i></a></li>
+            
+<nav class="navbar navbar-default navbar-big-transparent" id="main-navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a href="index.html" class="navbar-brand navbar-link">Corporate </a>
+            <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav hidden-xs hidden-sm navbar-left">
+                <li role="presentation" class="active"><a href="#" data-change="boxed" data-toggle="tooltip" data-placement="bottom" title="Toggle boxed version"><i class="fa fa-arrows-alt"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a data-toggle="dropdown" aria-expanded="false" href="#" class="dropdown-toggle">Homes <span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li role="presentation"><a href="index.html">Home hero medium</a></li>
+                        <li role="presentation"><a href="index-hero-full-height.html">Home hero full height</a></li>
+                        <li role="presentation"><a href="#">Third Item</a></li>
+                    </ul>
+                </li>
+                <!-- DROPDOWN WITH SUBLEVELS -->
+                <li class="dropdown">
+                    <a id="dLabel" data-toggle="dropdown" class="dropdown-toggle" data-target="#" href="/page.html">
+                        Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level multi-level-sub-left" role="menu" aria-labelledby="dropdownMenu">
+                      <li><a href="#">Some action</a></li>
+                      <li><a href="#">Some other action</a></li>
+                      <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">Hover me for more options</a>
+                        <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="#">Second level</a></li>
+                          <li class="dropdown-submenu">
+                            <a href="#">Even More..</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">3rd level</a></li>
+                                <li><a href="#">3rd level</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Second level</a></li>
+                          <li><a href="#">Second level</a></li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active" role="presentation"><a href="practice-areas.html">Practice areas</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Pages <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="team-member.html">Team member</a></li>
-                                    <li><a href="news-2.html">News Page version 2</a></li>
-                                    <li><a href="practice-area-1.html">Practice Area</a></li>
-                                </ul>
-                            </li>
-                            <li role="presentation"><a href="news.html">News </a></li>
-                            <li role="presentation"><a href="about.html">About </a></li>
-                            <li role="presentation"><a href="contact.html">Contact </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                      </li>
+                    </ul>
+                </li>
+                <!-- END OF DROPDOWN WITH SUBLEVELS -->
+                <li class="dropdown"><a data-toggle="dropdown" aria-expanded="false" href="#" class="dropdown-toggle">Pages <span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li role="presentation"><a href="practice-areas.html">Practice areas</a></li>
+                        <li role="presentation"><a href="news.html">News </a></li>
+                        <li role="presentation"><a href="news-2.html">News with small header</a></li>
+                        <li role="presentation"><a href="about.html">About </a></li>
+                        <li role="presentation"><a href="team-member.html">Team member</a></li>
+                        <li role="presentation"><a href="news-2.html">News Page version 2</a></li>
+                        <li role="presentation"><a href="practice-area-1.html">Practice Area</a></li>
+                    </ul>
+                </li>
+                <!-- MEGA MENU EXAMPLE -->
+                <li class="dropdown mega-dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mega menu <span class="glyphicon fa fa-caret-down"></span></a>
+
+                  <ul class="dropdown-menu mega-dropdown-menu row dark-bg">
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">New in Stores</li>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                              <h4><small>Summer dress floral prints</small></h4>
+                              <button class="btn btn-primary" type="button">49,99 €</button>
+                              <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                            </div>
+                            <!-- End Item -->
+                            <div class="item">
+                              <a href="#"><img src="http://placehold.it/254x150/ef5e55/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                              <h4><small>Gold sandals with shiny touch</small></h4>
+                              <button class="btn btn-primary" type="button">9,99 €</button>
+                              <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                            </div>
+                            <!-- End Item -->
+                            <div class="item">
+                              <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                              <h4><small>Denin jacket stamped</small></h4>
+                              <button class="btn btn-primary" type="button">49,99 €</button>
+                              <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                            </div>
+                            <!-- End Item -->
+                          </div>
+                          <!-- End Carousel Inner -->
+                        </div>
+                        <!-- /.carousel -->
+                        <li class="divider"></li>
+                        <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Dresses</li>
+                        <li><a href="#">Unique Features</a></li>
+                        <li><a href="#">Image Responsive</a></li>
+                        <li><a href="#">Auto Carousel</a></li>
+                        <li><a href="#">Newsletter Form</a></li>
+                        <li><a href="#">Four columns</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Tops</li>
+                        <li><a href="#">Good Typography</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Jackets</li>
+                        <li><a href="#">Easy to customize</a></li>
+                        <li><a href="#">Glyphicons</a></li>
+                        <li><a href="#">Pull Right Elements</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Pants</li>
+                        <li><a href="#">Coloured Headers</a></li>
+                        <li><a href="#">Primary Buttons & Default</a></li>
+                        <li><a href="#">Calls to action</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-sm-3">
+                      <ul>
+                        <li class="dropdown-header">Accessories</li>
+                        <li><a href="#">Default Navbar</a></li>
+                        <li><a href="#">Lovely Fonts</a></li>
+                        <li><a href="#">Responsive Dropdown </a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Newsletter</li>
+                        <form class="form" role="form">
+                          <div class="form-group">
+                            <label class="sr-only" for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                        </form>
+                      </ul>
+                    </li>
+                  </ul>
+
+                </li>
+                <!-- END OF MEGA MENU EXAMPLE -->
+                <li role="presentation"><a href="contact.html">Contact </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
         </header>
         <div class="jumbotron heading-jumbotron heading-background heading-background-mid padd-top-100">
             <div class="heading-jumbotron-inner container clearfix text-left">
@@ -64,12 +189,155 @@
                 </div>
             </div>
         </div>
-        <section class="content-section padding-top-medium padding-bottom-medium">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12"></div>
+        <section class="page">
+            <section class="content-section">
+                <section class="list-agencies padding-top-medium">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="_bsw-two-columns-description">
+                                    <header>
+                                        <h4>Find us</h4>
+                                        <h1>Our Locations</h1>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, turpis et gravida lobortis, elit ante ullamcorper leo, at faucibus justo diam non odio.&nbsp; </p>
+                                    </header>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="_bsw-two-columns-description-btn-container text-center"><a class="btn btn-primary btn-lg pull-right" role="button" href="team.html" data-toggle="modal" data-target="#map-modal-1">Localize us on map</a></div>
+                            </div>
+                        </div>
+                        <div class="_bswidget padding-medium-top-bottom">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-bottom-xsmall">
+                                    <div class="thumbnail">
+                                        <div class="_bsw-relative"><img class="img-responsive" src="assets/img/768x352.png"></div>
+                                        <div class="caption">
+                                            <h3> <a href="agency.html">New York Agency</a></h3>
+                                            <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            <p class="text-muted"> <a href="agency.html" class="link-read-more">More <i class="fa fa-long-arrow-right"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-bottom-xsmall">
+                                    <div class="thumbnail">
+                                        <div class="_bsw-relative"><img class="img-responsive" src="assets/img/768x352.png"></div>
+                                        <div class="caption">
+                                            <h3> <a href="agency.html">Montreal Agency</a></h3>
+                                            <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            <p class="text-muted"> <a href="agency.html" class="link-read-more">More <i class="fa fa-long-arrow-right"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-bottom-xsmall">
+                                    <div class="thumbnail">
+                                        <div class="_bsw-relative"><img class="img-responsive" src="assets/img/768x352.png"></div>
+                                        <div class="caption">
+                                            <h3> <a href="agency.html">London Agency</a></h3>
+                                            <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            <p class="text-muted"> <a href="agency.html" class="link-read-more">More <i class="fa fa-long-arrow-right"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-bottom-xsmall">
+                                    <div class="thumbnail">
+                                        <div class="_bsw-relative"><img class="img-responsive" src="assets/img/768x352.png"></div>
+                                        <div class="caption">
+                                            <h3> <a href="agency.html">Poitiers Agency</a></h3>
+                                            <p class="text-muted">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                            <p class="text-muted"> <a href="agency.html" class="link-read-more">More <i class="fa fa-long-arrow-right"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="_bswidget _bsw-form-big-section _bsw-dark-bg padding-medium-top-bottom _bsw-fixed-bg _bsw-image-bg _bsw-bg-cover _bsw-bg-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="_bsw-two-columns-description">
+                                    <header>
+                                        <h4>Contact us</h4>
+                                        <h1>Contact form title</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue, turpis et gravida lobortis, elit ante ullamcorper leo, at faucibus justo diam non odio.&nbsp; </p>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row padding-small-top-bottom">
+                            <div class="col-md-12">
+                                <form class="bootstrap-form-with-validation _bsw-white-bg _bsw-padding-small">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="text-input" placeholder="Your Name" id="text-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control" type="email" name="email-input" placeholder="Your email" id="email-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6">
+                                            <div class="form-group">
+                                                <select class="form-control" name="Practice areas" value="Practice Areas">
+                                                    <optgroup label="Practice areas">
+                                                        <option value="12" selected="">Your choice</option>
+                                                        <option value="13">This is item 2</option>
+                                                        <option value="14">This is item 3</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="textarea-input" placeholder="Your message" id="textarea-input"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-lg" type="submit">Send your message</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <p class="form-static-control">A basic template showing the proper way to create bootstrap forms using form group components, labels and input fields.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="news-preview-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 padding-small-top-bottom">
+                            <h1 class="text-center">Featured News</h1>
+                            <h4 class="text-center">Lorem Ipsum Subtitle</h4><a class="btn btn-primary btn-block link-all-btn" role="button" href="news.html">All the news</a>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                                    <h4>Heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
+                                <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                                    <h4>Heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
+                                <div class="col-lg-4 col-md-4 col-sm-6"><img class="img-responsive" src="assets/img/600x275.png" width="600" height="275">
+                                    <h4>Heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula faucibus viverra. Curabitur placerat sit amet justo in pretium. </p><a class="btn btn-link" role="button" href="#">Button</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
         <footer class="site-footer footer-full-featured dark-bg">
             <div class="container">
